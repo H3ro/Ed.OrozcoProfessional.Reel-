@@ -4,48 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduardo Orozco - Portfolio</title>
+    <title>Eduardo Orozco - Visual Storyteller</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; color: #333; }
-        header, footer { background: #222; padding: 10px 20px; color: white; text-align: center; }
-        section { margin-bottom: 20px; padding: 20px; background: white; }
-        .container { width: 80%; margin: auto; }
-        video { width: 100%; max-width: 600px; height: auto; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .hero {
+            background-image: url('eddie-hero.jpg'); /* Update this path if your image filename is different */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white; /* Ensure text is visible on your hero image */
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animated-text {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0; /* Start invisible for animation */
+            margin: 0; /* Remove default margin for heading and paragraph */
+        }
+        h1 {
+            font-size: 2.5em; /* Large text for the main heading */
+            padding: 0.5em 0; /* Spacing around text */
+        }
+        p {
+            font-size: 1.5em; /* Smaller text for subheading */
+            padding: 0.25em 0; /* Smaller spacing around text */
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Eduardo Orozco</h1>
-        <p>Video Editor | Motion Graphics Designer</p>
-    </header>
-    <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>Experienced National Editor and Commercial Producer with a demonstrated history in the broadcast media industry. Skilled in video editing, motion graphics, and multimedia content development. Fluent in English and Spanish.</p>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>E.W. Scripps, National Editor</strong> (2019-2024)</li>
-                <li><strong>E.W. Scripps, Commercial Producer</strong> (2017-2019)</li>
-                <li><strong>KMGH Denver7, Editor/Photographer</strong> (2016-2017)</li>
-                <li><strong>KOB Law, Media Producer</strong> (2015-2016)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <p>Adobe Premiere, Final Cut Pro, Avid, Photoshop, After Effects, Illustrator, Apple Motion.</p>
-        </section>
-        <section>
-            <h2>Video Reel</h2>
-            <video controls>
-                <source src="Eddie Orozco Reel 2024.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-        <footer>
-            <p>Contact me at <a href="mailto:hero.space.eo@gmail.com">hero.space.eo@gmail.com</a></p>
-        </footer>
+    <div class="hero">
+        <div>
+            <h1 class="animated-text">Eduardo Orozco - Visual Storyteller</h1>
+            <p class="animated-text">Capturing moments, telling stories.</p>
+        </div>
     </div>
 </body>
 </html>
