@@ -5,48 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Orozco - Visual Storyteller</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #000; color: white; }
         .hero {
-            background-image: url('eddie-hero.jpg'); /* Ensure this matches the file name exactly */
+            background-image: url('eddie-hero.jpg');
             background-size: cover;
-            background-position: center; 
+            background-position: center;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: white; /* Adjust for best visibility over your image */
+        }
+        .content {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .video-container {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
         }
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .animated-text {
             animation: fadeInUp 1s ease-out forwards;
-            opacity: 0; /* Start invisible for animation */
-            margin: 0; /* Remove default margin for heading and paragraph */
+            opacity: 0;
+            margin: 0;
         }
-        h1 {
-            font-size: 2.5em; /* Large text for the main heading */
-            padding: 0.5em 0; /* Spacing around text */
+        h1, h2, p {
+            margin: 0.5em 0;
         }
-        p {
-            font-size: 1.5em; /* Smaller text for subheading */
-            padding: 0.25em 0; /* Smaller spacing around text */
-        }
-        video {
-            width: 100%; /* Full width of container */
-            max-width: 800px; /* Maximum video size */
-            height: auto; /* Maintain aspect ratio */
-            margin: 20px auto; /* Center video horizontally and add space above and below */
-            display: block; /* Ensures the video is not inline */
-        }
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        p { font-size: 1.2em; }
     </style>
 </head>
 <body>
@@ -56,11 +57,20 @@
             <p class="animated-text">Capturing moments, telling stories.</p>
         </div>
     </div>
-    <div style="text-align: center;">
-        <video controls>
-            <source src="Eddie Orozco Reel 2024.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Videographer, Motion graphics Producer and Editor with over 10 years of professional experience in bringing stories and moments to life.</p>
+        <h2>My Work</h2> 
+        E.W. Scripps, National Editor | 2019-2024
+        E.W. Scripps, Commercial Producer | 2017-2019
+        KMGH Denver7, Editor/Photographer | 2016-2017
+        KOB Law, Media Producer | 2015-2016
+        <div class="video-container">
+            <video controls>
+                <source src="Eddie Orozco Reel 2024.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 </body>
 </html>
